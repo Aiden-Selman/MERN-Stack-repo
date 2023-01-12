@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
 import NewPlace from './places/pages/NewPlace';
 
 import Users from './users/pages/Users';
@@ -8,16 +13,16 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path={"/"} exact>
+        <Route path={'/'} exact>
           <Users />
         </Route>
-        <Route path={"/place/new"} exact>
+        <Route path={'/place/new'} exact>
           <NewPlace />
         </Route>
-        <Redirect to={"/"}/>
+        <Redirect to={'/'} />
       </Switch>
     </Router>
   );
-};
+}
 
 export default App;
