@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UsersList from '../components/pages/UsersList';
+import UsersList from '../components/UsersList';
 
 function Users() {
   const USERS = [
